@@ -1,0 +1,36 @@
+.gallery {
+    width: 1128px;
+    height: 648px;
+    margin: 150px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery-item {
+    width: 360px;
+    height: 200px;
+}
+
+.gallery-image {
+    display: block;
+    width: 360px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.04);
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path fill='%234E75FF' d='M10.296 29.025c0.24 0.199 0.542 0.308 0.853 0.308h14.184c0.707 0 1.386-0.281 1.886-0.781s0.781-1.178 0.781-1.886v-9.613c0-0.656-0.242-1.289-0.68-1.778s-1.040-0.799-1.692-0.872l-9.628-1.071v-8c0-0.707-0.281-1.386-0.781-1.886s-1.178-0.781-1.886-0.781c-0.707 0-1.386 0.281-1.886 0.781s-0.781 1.178-0.781 1.886v16l-4.040-1.616c-0.338-0.135-0.699-0.2-1.062-0.19s-0.721 0.094-1.051 0.247c-0.33 0.153-0.625 0.372-0.867 0.643s-0.426 0.589-0.541 0.934l-0.151 0.453c-0.085 0.254-0.091 0.528-0.018 0.786s0.223 0.488 0.43 0.659l6.929 5.776z'/></svg>") 16 16, auto;
+}
+
+.modal-image {
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: contain;
+    display: block;
+}
